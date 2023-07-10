@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/switchthemes.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <script src="src/scripts/script.js" defer></script>
+  </head>
+  <body class="darkTheme">
+    <div class="imageBackground"></div>
+    <main class="todo-container">
+      <header>
+        <h1>TODO</h1>
+        <button class="SwitchTheme" id="btnSwitchTheme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+            <path
+              fill="#FFF"
+              fill-rule="evenodd"
+              d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"
+            />
+          </svg>
+        </button>
+      </header>
+      <div class="todo-input">
+        <input type="text" placeholder="Create a new todo..." id="inputTodo" />
+        <button class="btn-create">
+          <i class="bx bx-save"></i>
+        </button>
+      </div>
+      <div class="todo-body">
+        <div class="todo-list"></div>
+        <footer class="filter-stats">
+          <p class="remaining-items" id="remaining-items"></p>
+          <span class="wrapper-buttons">
+            <button class="selected" value="all" id="allTodos">All</button>
+            <button value="active" id="activeTodos">Active</button>
+            <button value="completed" id="completedTodos">Completed</button>
+          </span>
+          <button id="btnClearCompleted">Clear Completed</button>
+        </footer>
+      </div>
+      <div class="filter-stats-mobile">
+        <span class="wrapper-buttons">
+          <button class="selected" value="all" id="allTodos">All</button>
+          <button value="active" id="activeTodos">Active</button>
+          <button value="completed" id="completedTodos">Completed</button>
+        </span>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url(main.css);
+
+/* Dark Theme  */
+body.darkTheme {
+  background-color: var(--color-Very-Dark-Blue);
+}
+body.darkTheme .todo-input {
+  background-color: var(--color-Very-Dark-Desaturated-Blue);
+}
+body.darkTheme .todo-input button {
+  color: var(--color-Very-Light-Gray);
+}
+body.darkTheme #inputTodo {
+  color: var(--color-Very-Light-Gray);
+}
+body.darkTheme .todo-body {
+  background-color: var(--color-Very-Dark-Desaturated-Blue);
+  color: white;
+}
+body.darkTheme .filter-stats-mobile {
+  background-color: var(--color-Very-Dark-Desaturated-Blue);
+  color: white;
+}
+body.darkTheme .filter-stats-mobile button {
+  color: var(--color-Dark-Grayish-Blue);
+}
+body.darkTheme .filter-stats button {
+  color: var(--color-Dark-Grayish-Blue);
+}
+body.darkTheme .filter-stats {
+  color: var(--color-Dark-Grayish-Blue);
+}
+body.darkTheme .filter-stats button:is(:hover) {
+  color: white;
+}
+body.darkTheme .imageBackground {
+  background-image: url(../../images/bg-desktop-dark.jpg);
+}
+
+/* Light Theme */
+body.lightTheme body {
+  background-color: white;
+}
+body.lightTheme .todo-input {
+  background-color: white;
+}
+body.lightTheme .todo-input button {
+  color: var(--color-Very-Dark-Blue);
+}
+body.lightTheme #inputTodo {
+  color: var(--color-Very-Dark-Blue);
+}
+body.lightTheme .todo-body {
+  background-color: white;
+  color: var(--color-Very-Dark-Blue);
+}
+body.lightTheme .filter-stats-mobile {
+  background-color: white;
+  color: var(--color-Very-Dark-Blue);
+}
+body.lightTheme .filter-stats button {
+  color: var(--color-Dark-Grayish-Blue);
+}
+body.lightTheme .filter-stats {
+  color: var(--color-Dark-Grayish-Blue);
+}
+body.lightTheme .filter-stats button:is(:hover) {
+  color: var(--color-Very-Dark-Grayish-Blue);
+}
+body.lightTheme .imageBackground {
+  background-image: url(../../images/bg-desktop-light.jpg);
+}
+
+@media (max-width: 800px) {
+  body.lightTheme .imageBackground {
+    background-image: url(../../images/bg-mobile-light.jpg);
+  }
+  body.darkTheme .imageBackground {
+    background-image: url(../../images/bg-mobile-dark.jpg);
+  }
+}
